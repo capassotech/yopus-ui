@@ -1,0 +1,91 @@
+{
+  "Category": {
+    "-O9tTaqfGlJY97JVwQab": {
+      "Description": " ",
+      "IdCategory": "-O9tTaqfGlJY97JVwQab",
+      "IsFeatured": true,
+      "Name": "Auriculares"
+    },
+    "-O9tTaqfGlJY97JVwQac": {
+      "Description": " ",
+      "IdCategory": "-O9tTaqfGlJY97JVwQac",
+      "IsFeatured": true,
+      "Name": "Parlantes"
+    },
+    "-O9tTaqfGlJY97JVwQad": {
+      "Description": " ",
+      "IdCategory": "-O9tTaqfGlJY97JVwQad",
+      "IsFeatured": false,
+      "Name": "Celulares"
+    },
+    "-O9tTaqfGlJY97JVwQae": {
+      "Description": " ",
+      "IdCategory": "-O9tTaqfGlJY97JVwQae",
+      "IsFeatured": false,
+      "Name": "Relojes"
+    },
+    "-O9tTaqfGlJY97JVwQaf": {
+      "Description": " ",
+      "IdCategory": "-O9tTaqfGlJY97JVwQaf",
+      "IsFeatured": false,
+      "Name": "Tablets"
+    }
+  },
+  "Contact": {
+    "-O7VUYfCHvFWLzka38SF": {
+      "Address": "Paraná, Entre Rios",
+      "Email": "capassoelias@gmail.com",
+      "IdContact": "-O7VUYfCHvFWLzka38SF",
+      "Phone": 3434705899
+    }
+  },
+  "FAQ": {
+    "-O7Ga9GAygAI2qVySt31": {
+      "Answer": "El piso laminado waterproof, o impermeable, está diseñado con una capa protectora especial que lo hace resistente al agua. Esto significa que puede soportar derrames y humedad sin dañarse, lo que lo convierte en una excelente opción para cocinas, baños u otras áreas con alta humedad.",
+      "IdFAQ": "-O7Ga9GAygAI2qVySt31",
+      "Question": "¿Qué es un piso laminado waterproof?"
+    },
+    "-O7Ga9GAygAI2qVySt32": {
+      "Answer": "La instalación de pisos laminados es relativamente sencilla, utilizando el sistema de click o encastre, donde las piezas se ajustan entre sí sin necesidad de adhesivos. Es importante preparar bien la superficie, asegurarse de que esté nivelada, limpia y seca, y dejar una pequeña expansión para permitir el movimiento natural del piso debido a los cambios de temperatura.",
+      "IdFAQ": "-O7Ga9GAygAI2qVySt32",
+      "Question": "¿Cómo se instalan?"
+    },
+    "-O7Ga9GAygAI2qVySt3v": {
+      "Answer": "Un piso laminado es un tipo de revestimiento para suelos fabricado con varias capas de materiales compuestos, como resinas y melaminas, que imitan la apariencia de la madera natural. Son una opción accesible y resistente a arañazos, desgaste y decoloración, lo que los convierte en una alternativa popular a los pisos de madera.",
+      "IdFAQ": "-O7Ga9GAygAI2qVySt3v",
+      "Question": "¿Qué es un piso laminado?"
+    }
+  },
+  "Product": {
+    "P1": {
+      "Description": "Beats Studio Pro - Auriculares inalámbricos con cancelación de ruido y Bluetooth - Audio espacial personalizado, audio sin pérdida mediante USB-C, compatibilidad con Apple y Android, hasta 40 horas de duración de batería - Negro",
+      "Dimensions": "",
+      "IdCategory": "-O9tTaqfGlJY97JVwQab",
+      "IdProduct": "P1",
+      "ImageUrls": [
+        "https://firebasestorage.googleapis.com/v0/b/yoppus-1312.appspot.com/o/products%2FP1%2F1.jpg?alt=media&token=42f8d99e-7687-43ff-a712-bfca9270e431",
+        "https://firebasestorage.googleapis.com/v0/b/yoppus-1312.appspot.com/o/products%2FP1%2F2.jpg?alt=media&token=af0a2448-acc6-4d83-b0e2-44dee1021001",
+        "https://firebasestorage.googleapis.com/v0/b/yoppus-1312.appspot.com/o/products%2FP1%2F3.jpg?alt=media&token=b66f4479-7c94-4e6d-ac3d-8fdba6870ecd",
+        "https://firebasestorage.googleapis.com/v0/b/yoppus-1312.appspot.com/o/products%2FP1%2F4.jpg?alt=media&token=54185096-f476-4202-9437-f3b24231b052"
+      ],
+      "IsFeatured": true,
+      "Name": "Beats Studio Pro - Auriculares inalámbricos con cancelación de ruido y Bluetooth",
+      "Price": 419000
+    },
+    "P2": {
+      "Description": "Beats Studio Buds - Auriculares inalámbricos con cancelación de ruido - Compatibles con Apple y Android, micrófono integrado, clasificación IPX4, auriculares resistentes al sudor, auriculares Bluetooth de clase 1 - Negro",
+      "Dimensions": "",
+      "IdCategory": "-O9tTaqfGlJY97JVwQab",
+      "IdProduct": "P2",
+      "ImageUrls": [
+        "https://firebasestorage.googleapis.com/v0/b/yoppus-1312.appspot.com/o/products%2FP2%2F1.jpg?alt=media&token=a11faacf-4345-4b67-9e7b-86112646b618",
+        "https://firebasestorage.googleapis.com/v0/b/yoppus-1312.appspot.com/o/products%2FP2%2F2.jpg?alt=media&token=883b65ce-e835-429d-a065-a595d2d85786",
+        "https://firebasestorage.googleapis.com/v0/b/yoppus-1312.appspot.com/o/products%2FP2%2F3.jpg?alt=media&token=39ebb5d2-8b41-4bef-aa8e-7e455f9cd4b3",
+        "https://firebasestorage.googleapis.com/v0/b/yoppus-1312.appspot.com/o/products%2FP2%2F4.jpg?alt=media&token=bad2b65e-7ecd-49e6-8de0-2837adb5158d"
+      ],
+      "IsFeatured": true,
+      "Name": "Beats Studio Buds - Auriculares inalámbricos con cancelación de ruido",
+      "Price": 220000
+    }
+  }
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>
+		Yopus | Tienda de Tecnología en Paraná, Entre Ríos | Envíos a Todo el País
+	</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description"
+		content="En Yopus encontrarás una amplia variedad de productos tecnológicos como auriculares, parlantes, relojes, celulares, tablets y notebooks. Compra desde Paraná, Entre Ríos, con envíos a todo el país. ¡Tecnología de calidad al alcance de tu mano!" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<meta name="keywords"
+		content="tienda de tecnología, comprar auriculares online, parlantes en Paraná, relojes inteligentes, celulares en Argentina, tablets en venta, notebooks en Paraná, tecnología en Paraná, Yopus tienda online, envíos a todo el país, productos tecnológicos en Argentina, gadgets tecnológicos, accesorios para celulares, tecnología a buen precio" />
+
+	<meta name="author" content="Yopus" />
+
+	<link rel="icon" href="/images/logo-sin-fondo.png" type="image/x-icon" />
+
+	<meta property="og:title" content="Yopus | Tienda de Tecnología en Paraná, Entre Ríos | Envíos a Todo el País" />
+	<meta property="og:description"
+		content="En Yopus encontrarás una amplia variedad de productos tecnológicos como auriculares, parlantes, relojes, celulares, tablets y notebooks. Compra desde Paraná, Entre Ríos, con envíos a todo el país. ¡Tecnología de calidad al alcance de tu mano!" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://yoppus-1312.web.app/" />
+	<meta property="og:image" content="https://yoppus-1312.web.app/images/logo-sin-fondo.png" />
+	<meta property="og:site_name" content="Yopus" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Yopus | Tienda de Tecnología en Paraná, Entre Ríos | Envíos a Todo el País" />
+	<meta name="twitter:description"
+		content="En Yopus encontrarás una amplia variedad de productos tecnológicos como auriculares, parlantes, relojes, celulares, tablets y notebooks. Compra desde Paraná, Entre Ríos, con envíos a todo el país. ¡Tecnología de calidad al alcance de tu mano!" />
+	<meta name="twitter:image" content="https://yoppus-1312.web.app/images/logo-sin-fondo.png" />
+	<meta name="twitter:site" content="@yopus" />
+
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css" />
+	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" type="text/css" href="styles/product.css" />
+	<link rel="stylesheet" type="text/css" href="styles/product_responsive.css" />
+	<link rel="stylesheet" type="text/css" href="styles/navbar.css" />
+	<link rel="stylesheet" type="text/css" href="styles/footer.css" />
+	<link rel="stylesheet" type="text/css" href="styles/responsive.css" />
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+	<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js"></script>
+</head>
+
+<body>
+	<div id="loader" class="loader-container">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Boton flotante de WhatsApp -->
+	<a href="https://wa.me/5493434705899" class="whatsapp-float" target="_blank">
+		<img src="images/icons/wa.png" alt="WhatsApp" />
+	</a>
+
+	<!-- Botones flotantes de redes sociales -->
+	<div class="social-floating-buttons">
+		<a href="https://www.facebook.com/home.pisos.oroverde" target="_blank" class="social-btn facebook">
+			<img src="images/icons/facebook.webp" alt="Facebook" />
+		</a>
+		<a href="https://www.instagram.com/home_pisos_/" target="_blank" class="social-btn instagram">
+			<img src="images/icons/instagram.png" alt="Instagram" />
+		</a>
+	</div>
+
+	<div class="super_container">
+		<!-- Header -->
+		<header class="header">
+			<div class="header_inner d-flex flex-row align-items-center justify-content-start">
+				<div class="logo"><a href="index.html"><img style="width: 60px;" src="images/logo.png" /></a></div>
+				<nav class="main_nav">
+					<ul class="d-flex flex-row align-items-center justify-content-start">
+						<li id="category-1"><a href="#"></a></li>
+						<li id="category-2"><a href="#"></a></li>
+						<li class="nav-item dropdown">
+							<a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">Categorías
+							</a>
+
+							<ul class="dropdown-menu" id="more-products" aria-labelledby="navbarDropdown">
+								<!-- Aquí se agregarán dinámicamente las categorías no destacadas -->
+							</ul>
+						</li>
+						<li><a href="/contact.html">Contacto</a></li>
+					</ul>
+				</nav>
+				<div class="header_content ml-5">
+					<div class="search header_search">
+						<form id="search-form" action="#">
+							<input type="search" class="search_input" id="search-input" required="required"
+								placeholder="Buscar productos..." />
+							<button type="submit" id="search_button" class="search_button">
+								<img src="images/magnifying-glass.svg" alt="" />
+							</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="burger_container d-flex flex-column align-items-center justify-content-around menu_mm">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Menu -->
+
+		<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+			<div class="menu_close_container">
+				<div class="menu_close">
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div class="logo">
+				<a href="index.html"><img style="width: 60px" src="images/logo.png" /></a>
+			</div>
+			<div class="search">
+				<form id="search-form-menu" action="#">
+					<input type="search" class="search_input menu_mm" id="search-input-menu" required="required"
+						placeholder="Buscar productos..." />
+					<button type="submit" id="search_button_menu" class="search_button menu_mm">
+						<img class="menu_mm" src="images/magnifying-glass.svg" alt="" />
+					</button>
+				</form>
+			</div>
+			<nav class="menu_nav" style="float: left; text-align: left; width: 100%;">
+				<ul class="menu_mm">
+					<li class="menu_mm"><a href="/">Inicio</a></li>
+
+					<div style="padding-left: 10%;">
+						<li class="menu_mm"><a style="color: gray;" href="/products.html?search=parlantes">Parlantes</a>
+						</li>
+						<li class="menu_mm"><a style="color: gray;"
+								href="/products.html?search=auriculares">Auriculares</a>
+						</li>
+					</div>
+
+					<li class="menu_mm nav-item dropdown">
+						<a class="dropdown-toggle" href="#" id="navbarDropdownMenu" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false" data-prevent-close="true">Categorías
+						</a>
+						<ul class="dropdown-menu menu_mm" id="more-products-menu" aria-labelledby="navbarDropdownMenu">
+							<!-- Aquí se agregarán dinámicamente las categorías no destacadas -->
+						</ul>
+					</li>
+					<li class="menu_mm"><a href="/products.html">Todos los Productos</a></li>
+					<li class="menu_mm">
+						<a href="/contact.html#preguntas-frecuentes">Preguntas Frecuentes</a>
+					</li>
+					<li class="menu_mm"><a href="/contact.html">Contacto</a></li>
+					<br />
+					<li class="menu_mm"><a href="https://home-pisos-vinilicos-server.onrender.com/login"
+							target="_blank">Iniciar Sesión</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- Product -->
+
+		<div class="product mt-5">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="current_page">
+							<ul id="productCategories"></ul>
+						</div>
+					</div>
+				</div>
+				<div class="row product_row">
+					<!-- Product Image -->
+					<div class="col-lg-7">
+						<div class="product_image">
+							<div class="product_image_large">
+								<img id="productImage" src="" alt="Imagen no disponible" />
+							</div>
+							<div id="imageThumbnails"
+								class="product_image_thumbnails d-flex flex-row align-items-start justify-content-start">
+								<!-- Aquí se generarán las miniaturas dinámicamente -->
+							</div>
+						</div>
+					</div>
+
+					<!-- Product Content -->
+					<div class="col-lg-5">
+						<div class="product_content">
+							<div class="product_name">
+								<h1 id="productName"></h1>
+							</div>
+							<div class="product_price" id="productPrice"></div>
+
+							<div class="in_stock_container">
+								<div class="in_stock in_stock_true"></div>
+								<span>Hay stock</span>
+							</div>
+
+							<div class="product_text">
+								<p id="productSurfacePerBox"></p>
+								<p id="productDimensions"></p>
+								<p id="productTechnicalSheet"></p>
+								<p id="productDescription"></p>
+							</div>
+
+							<br />
+
+							<div class="product-options">
+								<!-- <div>
+									<label for="quantity_input">Cantidad:</label>
+									<input type="number" id="quantity_input" value="1" min="1">
+								</div> -->
+
+								<!-- <div>
+									<label>Color:</label>
+									<select id="color_input">
+									</select>
+								</div> -->
+							</div>
+							<div class="product_buttons">
+								<!-- Se genera dinamicamente el boton -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="footer-placeholder" class="footer"></footer>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="styles/bootstrap4/popper.js"></script>
+	<script src="styles/bootstrap4/bootstrap.min.js"></script>
+	<script src="plugins/easing/easing.js"></script>
+	<script src="plugins/parallax-js-master/parallax.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="plugins/colorbox/jquery.colorbox-min.js"></script>
+	<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/init_firebase.js"></script>
+	<script src="js/product.js"></script>
+	<script src="js/categories.js"></script>
+	<script src="js/search.js"></script>
+
+	<!-- Modulos -->
+	<script src="js/footer.js"></script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4HC6MV32X4"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-4HC6MV32X4');
+	</script>
+</body>
+
+</html>
